@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HomeActivity" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:text="手机控制系统"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <Spinner
+        android:id="@+id/sp_online_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <GridView
+        android:id="@+id/gv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:numColumns="4"
+        android:paddingLeft="10dp"
+        android:verticalSpacing="10dp" >
+    </GridView>
+
+</LinearLayout>

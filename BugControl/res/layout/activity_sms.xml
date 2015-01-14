@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+      android:orientation="vertical"
+    >
+
+    <include
+        android:id="@+id/ll_loading"
+        layout="@layout/progress_dialog_layout"
+        android:visibility="invisible" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#8866ff00"
+            android:gravity="center"
+            android:text="短信"
+            android:textColor="#000000"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/tv_no_sms"
+            android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:text="抱歉，对方手机中没有任何短信！"
+            android:textSize="16sp"
+            android:visibility="gone"
+             />
+
+        <ListView
+            android:id="@+id/lv_convers_list"
+             android:layout_weight="100"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+        </ListView>
+
+</LinearLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dp" >
+
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="58dp"
+            android:background="@drawable/sms_item_bg"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/iv_sms_list_item_self_icon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/sms_item_icon" />
+
+            <TextView
+                android:id="@+id/tv_sms_list_item_self_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_sms_list_item_self_icon"
+                android:layout_weight="5"
+                android:gravity="left"
+                android:text="这是短信内容"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_sms_list_item_self_owner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="我" />
+
+            <TextView
+                android:id="@+id/tv_sms_list_item_self_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@id/tv_sms_list_item_self_owner"
+                android:text="10-12 10:10" />
+        </RelativeLayout>
+
+</LinearLayout>

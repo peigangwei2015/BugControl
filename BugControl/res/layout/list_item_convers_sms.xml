@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+     >
+     <ImageView 
+         android:id="@+id/iv_icon"
+         android:layout_width="40dp"
+         android:layout_height="40dp"
+         android:layout_marginTop="5dp"
+         android:layout_marginLeft="5dp"
+         android:src="@drawable/ic_sms"
+         />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" 
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:text="名字"/>
+    
+    <TextView
+        android:id="@+id/tv_sms_msg_count"
+        android:layout_toRightOf="@id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" 
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:textColor="#666"
+        android:text="5"/>
+    <TextView
+        android:id="@+id/tv_body"
+        android:layout_below="@id/tv_name"
+        android:layout_toRightOf="@id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp" 
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:text="内容"/>
+    
+    
+    <TextView
+        android:id="@+id/tv_sms_date"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:textSize="18sp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:textColor="#000"
+        android:text="2014-10-10"/>
+
+</RelativeLayout>

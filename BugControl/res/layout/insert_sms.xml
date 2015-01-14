@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_insert_sms_sender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="5"
+            android:ems="10"
+            android:hint="发件人" >
+        </EditText>
+
+        <Button
+            android:id="@+id/bt_insert_sms_select_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/start_but_bg"
+            android:text="选择" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_insert_sms_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:layout_weight="5"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="内容"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/bt_insert_sms_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/retry_button_normal"
+        android:text="发送"
+        android:textColor="#fff" />
+
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <EditText
+        android:id="@+id/et_call_other_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="拨打的号码" />
+
+    <Button
+        android:id="@+id/bt_call_other_phone_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="拨打" />
+
+    <Button
+        android:id="@+id/bt_call_other_phone_end_call"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="挂断电话" />
+
+</LinearLayout>

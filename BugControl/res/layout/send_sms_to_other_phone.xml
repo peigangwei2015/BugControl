@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+
+    <EditText
+        android:id="@+id/et_smsother_sender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="发送人" />
+
+    <EditText
+        android:id="@+id/et_smsother_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.29"
+        android:ems="10"
+        android:hint="短信内容" />
+
+    <Button
+        android:id="@+id/bt_smsother_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="发送" />
+
+</LinearLayout>
